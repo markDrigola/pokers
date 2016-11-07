@@ -405,6 +405,81 @@ main.mainAllBg {
           }
         }
       }
+
+      .activesLine {
+        width: 0%;
+        height: 2px;
+        background: #fff;
+        position: absolute;
+        top: 120px;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .activePlayers {
+        -webkit-animation: activePlayers 1s linear infinite;
+        -moz-animation: activePlayers 1s linear infinite;
+        -o-animation: activePlayers 1s linear infinite;
+        animation: activePlayers 1s linear infinite;
+      }
+
+      @-webkit-keyframes activePlayers {
+        0% {
+          width: 0%;
+        }
+
+        50% {
+          width: 100%;
+        }
+
+        100% {
+          width: 0%;
+        }
+      }
+
+      @-moz-keyframes activePlayers {
+        0% {
+          width: 100%;
+        }
+
+        50% {
+          width: 0%;
+        }
+
+        100% {
+          width: 100%;
+        }
+      }
+
+      @-o-keyframes activePlayers {
+        0% {
+          width: 100%;
+        }
+
+        50% {
+          width: 0%;
+        }
+
+        100% {
+          width: 100%;
+        }
+      }
+
+      @keyframes activePlayers {
+        0% {
+          width: 100%;
+        }
+
+        50% {
+          width: 0%;
+        }
+
+        100% {
+          width: 100%;
+        }
+      }
     }
 
     .firstPlayersPosition {
@@ -516,6 +591,25 @@ main.mainAllBg {
 
       .raiseButton {
 
+      }
+    }
+
+    .pointsGame {
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin: auto;
+      width: 70px;
+      top: 20px;
+
+      .textPoints {
+        font-size: 18px;
+        color: #fff;
+      }
+
+      .jeckPots {
+        font-size: 16px;
+        color: #fff;
       }
     }
 

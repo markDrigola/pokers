@@ -386,31 +386,94 @@ main.mainAllBg .mainAll .pokerInfo p {
     display: none;
   }
 }
-/* line 410, ../sass/style.scss */
+/* line 409, ../sass/style.scss */
+.pokerAllBlock .pokerTable .playersBlockAll .activesLine {
+  width: 0%;
+  height: 2px;
+  background: #fff;
+  position: absolute;
+  top: 120px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 421, ../sass/style.scss */
+.pokerAllBlock .pokerTable .playersBlockAll .activePlayers {
+  -webkit-animation: activePlayers 1s linear infinite;
+  -moz-animation: activePlayers 1s linear infinite;
+  -o-animation: activePlayers 1s linear infinite;
+  animation: activePlayers 1s linear infinite;
+}
+@-webkit-keyframes activePlayers {
+  0% {
+    width: 0%;
+  }
+  50% {
+    width: 100%;
+  }
+  100% {
+    width: 0%;
+  }
+}
+@-moz-keyframes activePlayers {
+  0% {
+    width: 100%;
+  }
+  50% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+@-o-keyframes activePlayers {
+  0% {
+    width: 100%;
+  }
+  50% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+@keyframes activePlayers {
+  0% {
+    width: 100%;
+  }
+  50% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+/* line 485, ../sass/style.scss */
 .pokerAllBlock .pokerTable .firstPlayersPosition {
   position: absolute;
   top: 50px;
   left: 0;
 }
-/* line 416, ../sass/style.scss */
+/* line 491, ../sass/style.scss */
 .pokerAllBlock .pokerTable .secondPlayersPosition {
   position: absolute;
   top: 350px;
   left: 0;
 }
-/* line 422, ../sass/style.scss */
+/* line 497, ../sass/style.scss */
 .pokerAllBlock .pokerTable .thirdPlayersPosition {
   position: absolute;
   top: 50px;
   right: -150px;
 }
-/* line 428, ../sass/style.scss */
+/* line 503, ../sass/style.scss */
 .pokerAllBlock .pokerTable .fourthPlayersPosition {
   position: absolute;
   top: 350px;
   right: -150px;
 }
-/* line 434, ../sass/style.scss */
+/* line 509, ../sass/style.scss */
 .pokerAllBlock .pokerTable .blockCardsAll {
   position: absolute;
   top: 190px;
@@ -421,39 +484,39 @@ main.mainAllBg .mainAll .pokerInfo p {
   width: 260px;
   height: 55px;
 }
-/* line 444, ../sass/style.scss */
+/* line 519, ../sass/style.scss */
 .pokerAllBlock .pokerTable .blockCardsAll .styleCardsAll {
   width: 46px;
   height: 68px;
   float: left;
   margin-left: 5px;
 }
-/* line 451, ../sass/style.scss */
+/* line 526, ../sass/style.scss */
 .pokerAllBlock .pokerTable .blockCardsAll .firstCards {
   background: url("../img/allCards.png") no-repeat;
   background-position: 0 70px;
 }
-/* line 456, ../sass/style.scss */
+/* line 531, ../sass/style.scss */
 .pokerAllBlock .pokerTable .blockCardsAll .secondCards {
   background: url("../img/allCards.png") no-repeat;
   background-position: 0 70px;
 }
-/* line 461, ../sass/style.scss */
+/* line 536, ../sass/style.scss */
 .pokerAllBlock .pokerTable .blockCardsAll .thirdCards {
   background: url("../img/allCards.png") no-repeat;
   background-position: 0 70px;
 }
-/* line 466, ../sass/style.scss */
+/* line 541, ../sass/style.scss */
 .pokerAllBlock .pokerTable .blockCardsAll .fourthCards {
   background: url("../img/allCards.png") no-repeat;
   background-position: 0 70px;
 }
-/* line 471, ../sass/style.scss */
+/* line 546, ../sass/style.scss */
 .pokerAllBlock .pokerTable .blockCardsAll .fivethCards {
   background: url("../img/allCards.png") no-repeat;
   background-position: 0 70px;
 }
-/* line 477, ../sass/style.scss */
+/* line 552, ../sass/style.scss */
 .pokerAllBlock .pokerTable .gameManagementAll {
   position: absolute;
   top: 500px;
@@ -463,7 +526,7 @@ main.mainAllBg .mainAll .pokerInfo p {
   margin: auto;
   display: flex;
 }
-/* line 486, ../sass/style.scss */
+/* line 561, ../sass/style.scss */
 .pokerAllBlock .pokerTable .gameManagementAll .buttonManagementStyle {
   width: 100px;
   height: 35px;
@@ -483,14 +546,33 @@ main.mainAllBg .mainAll .pokerInfo p {
   margin: auto;
   border-radius: 4px;
 }
-/* line 505, ../sass/style.scss */
+/* line 580, ../sass/style.scss */
 .pokerAllBlock .pokerTable .gameManagementAll .buttonManagementStyle:hover {
   font-size: 20px;
   -webkit-box-shadow: 0px 0px 20px 0px rgba(255, 255, 255, 0.75);
   -moz-box-shadow: 0px 0px 20px 0px rgba(255, 255, 255, 0.75);
   box-shadow: 0px 0px 20px 0px rgba(255, 255, 255, 0.75);
 }
-/* line 522, ../sass/style.scss */
+/* line 597, ../sass/style.scss */
+.pokerAllBlock .pokerTable .pointsGame {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 70px;
+  top: 20px;
+}
+/* line 605, ../sass/style.scss */
+.pokerAllBlock .pokerTable .pointsGame .textPoints {
+  font-size: 18px;
+  color: #fff;
+}
+/* line 610, ../sass/style.scss */
+.pokerAllBlock .pokerTable .pointsGame .jeckPots {
+  font-size: 16px;
+  color: #fff;
+}
+/* line 616, ../sass/style.scss */
 .pokerAllBlock .pokerTable .blendsStyleAll {
   position: absolute;
   width: 16px;
@@ -502,7 +584,7 @@ main.mainAllBg .mainAll .pokerInfo p {
   top: 70px;
   left: 15px;
 }
-/* line 534, ../sass/style.scss */
+/* line 628, ../sass/style.scss */
 .pokerAllBlock .pokerTable .blendsBlocBig {
   background: #f00;
 }
